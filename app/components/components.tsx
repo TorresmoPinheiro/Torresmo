@@ -16,20 +16,23 @@ export function Nav () {
 interface SingleProductProps {
     name: string;
     price: string;
+    legend: string;
+    url: string;
 }
 
-function SingleProduts({ name, price }: SingleProductProps) {
+function SingleProduts({ name, price, legend, url }: SingleProductProps) {
     return (
         <div className=" md:flex justify-center" id="Produtos">
             <div className="flex flex-col items-center bg-orange-700 m-3 md:my-2 rounded-lg shadow-md shadow-orange-950">
                 <Image className="rounded-lg m-1 mt-3 md:mt-1"
-                    src='/banha.jpg'
+                    src={`/${url}.jpg`}
                     width={300}
                     height={200}
                     alt="Foto do torresmo"
                 />
-                <p className="text-center m-5 text-4xl">{name}</p>
-                <p className="p-2 text-3xl">{price}</p>
+                <p className="text-center m-5 text-5xl">{name}</p>
+                <p className="p-2 text-4xl">{price}</p>
+                <p className="text-sm">{legend}</p>
                 <button className="bg-orange-600 hover:bg-orange-800 p-3 m-3 rounded-3xl text-2xl shadow-md shadow-orange-950" >Comprar</button>
             </div>
         </div>
@@ -45,9 +48,9 @@ export function Products() {
                 </p>
             </div>
             <div className=" md:flex justify-center" >
-                <SingleProduts name="Banha suina" price="R$ 29,99"/>
-                <SingleProduts name="Torresmo" price="R$ 39,99"/>
-                <SingleProduts name="Mandioca" price="R$ 5,99"/>
+                <SingleProduts url="banha" price="R$ 29,99" legend="A Garrafa de 2L" name="Banha"/>
+                <SingleProduts url="torresmop" price="R$ 34,99" legend="O Kilo" name="Torresmo"/>
+                <SingleProduts url="mandioca" price="R$ 5,99" legend="O Kilo" name="Mandioca"/>
             </div>
         </>
     )
@@ -61,7 +64,7 @@ export function Banner() {
                 <div>
                     <h1 className=""> 
                         <span className="text-orange-500"> Torresmo Pinheiro</span> Sabor e Qualidade</h1>
-                </div>
+                </div>n
                 <div className="flex items-center justify-center">
                         <Image className=" rounded-lg"
                             src="/torresmo.jpg"
@@ -127,7 +130,7 @@ export function Contacts() {
 export function Location() {
     return (
         <div className="" id="localizacao">
-            <div className=" bg-orange-700 m-2 rounded-lg ">
+            <div className=" bg-orange-700 m-2 rounded-lg shadow-md shadow-orange-950    ">
                 <h1 className="text-5xl text-center p-2">Faça uma visita</h1>
                 <div className=" bg-orange-700 m-2 rounded-lg text-center p-4">
                     <button className="bg-orange-600 hover:bg-orange-800 p-3 m-3 rounded-3xl text-2xl shadow-md shadow-orange-950" >

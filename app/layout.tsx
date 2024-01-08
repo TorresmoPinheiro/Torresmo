@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-br" className="bg-orange-900">
       <body className={roboto.className}>{children}</body>
     </html>
   )
