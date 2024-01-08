@@ -33,7 +33,7 @@ function SingleProduts({ name, price, legend, url }: SingleProductProps) {
                 <p className="text-center m-5 text-5xl">{name}</p>
                 <p className="p-2 text-4xl">{price}</p>
                 <p className="text-sm">{legend}</p>
-                <button className="bg-orange-600 hover:bg-orange-800 p-3 m-3 rounded-3xl text-2xl shadow-md shadow-orange-950" >Comprar</button>
+                <button className="bg-orange-600 hover:bg-orange-800 p-3 m-3 rounded-3xl text-2xl shadow-md shadow-orange-950" ><a href="https://wa.me/+556492092575">Comprar</a></button>
             </div>
         </div>
     )
@@ -64,7 +64,7 @@ export function Banner() {
                 <div>
                     <h1 className=""> 
                         <span className="text-orange-500"> Torresmo Pinheiro</span> Sabor e Qualidade</h1>
-                </div>n
+                </div>
                 <div className="flex items-center justify-center">
                         <Image className=" rounded-lg"
                             src="/torresmo.jpg"
