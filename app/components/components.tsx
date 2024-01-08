@@ -50,7 +50,7 @@ export function Products() {
             <div className=" md:flex justify-center" >
                 <SingleProduts url="banha" price="R$ 29,99" legend="A Garrafa de 2L" name="Banha"/>
                 <SingleProduts url="torresmop" price="R$ 34,99" legend="O Kg" name="Torresmo"/>
-                <SingleProduts url="mandioca" price="R$ 5,99" legend="O Kilo" name="Mandioca"/>
+                <SingleProduts url="mandioca" price="R$ 5,99" legend="O Kg" name="Mandioca"/>
             </div>
         </>
     )
