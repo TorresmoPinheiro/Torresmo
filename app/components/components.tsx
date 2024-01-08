@@ -33,7 +33,7 @@ function SingleProduts({ name, price, legend, url }: SingleProductProps) {
                 <p className="text-center m-5 text-5xl">{name}</p>
                 <p className="p-2 text-4xl">{price}</p>
                 <p className="text-sm">{legend}</p>
-                <button className="bg-orange-600 hover:bg-orange-800 p-3 m-3 rounded-3xl text-2xl shadow-md shadow-orange-950" ><a href="https://wa.me/+556492092575">Comprar</a></button>
+                <button className="bg-orange-600 hover:bg-orange-800 p-3 m-3 rounded-3xl text-2xl shadow-md shadow-orange-950" ><a href="https://wa.me/+556492092575" target="_blank">Comprar</a></button>
             </div>
         </div>
     )
@@ -49,7 +49,7 @@ export function Products() {
             </div>
             <div className=" md:flex justify-center" >
                 <SingleProduts url="banha" price="R$ 29,99" legend="A Garrafa de 2L" name="Banha"/>
-                <SingleProduts url="torresmop" price="R$ 34,99" legend="O Kilo" name="Torresmo"/>
+                <SingleProduts url="torresmop" price="R$ 34,99" legend="O Kg" name="Torresmo"/>
                 <SingleProduts url="mandioca" price="R$ 5,99" legend="O Kilo" name="Mandioca"/>
             </div>
         </>
@@ -112,13 +112,13 @@ export function Contacts() {
             <div className=" bg-orange-700 m-2 rounded-lg shadow-md shadow-orange-950">
                 <h1 className="text-4xl text-center p-2 ">Entre em contato conosco</h1>
                 <div className="flex flex-row items-center justify-center p-5">
-                    <a href="" className="m-5 text-7xl text-blue-400 hover:text-blue-700">
+                    <a href="https://www.facebook.com/profile.php?id=100090140616664&mibextid=2JQ9oc" target="_blank" className="m-5 text-7xl text-blue-400 hover:text-blue-700">
                         <FaFacebook/>
                     </a>
-                    <a href="" className="m-5 text-7xl text-pink-400 hover:text-purple-900">
+                    <a href="https://www.instagram.com/torresmo_pinheiro/" target="_blank" className="m-5 text-7xl text-pink-400 hover:text-purple-900">
                         <FaInstagram/>
                     </a>
-                    <a href="" className="m-5 text-7xl text-green-400 hover:text-green-800">
+                    <a href="https://wa.me/+556492092575" target="_blank" className="m-5 text-7xl text-green-400 hover:text-green-800">
                         <FaWhatsapp/>
                     </a>
                 </div>
